@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>
+      Online Shopping Site for Mobiles, Electronics, Furniture, Grocery,
+      Lifestyle, Books & More. Best Offers!
+    </title>
+  </head>
+  <body>
+    <div id="main" class="w-100% bg-[#F1F2F4]">
+      <div
+        id="navbar"
+        class="w-full h-20 flex justify-between items-center lg:pr-14 gap-3 bg-white z-50 sticky top-0"
+      >
+        <div id="logo" class="cursor-pointer max-md:flex-1 lg:ml-0 ml-[-3rem]">
+          <img src="../images/logo.svg" alt="logo" />
+        </div>
+
+        <div
+          id="searchBox"
+          class="w-[45%] h-11 rounded-lg overflow-hidden cursor-pointer hidden md:flex items-center"
+        >
+          <span
+            class="material-symbols-outlined p-2 bg-[#F0F5FF] h-full flex items-center text-gray-400"
+          >
+            search </span
+          ><input
+            type="text"
+            placeholder="Search for Products, Brands and More"
+            id="#search"
+            class="w-full h-full bg-[#F0F5FF] text-ellipsis outline-none tracking-[.5px]"
+          />
+        </div>
+
+        <div
+          id="login"
+          class="md:p-1 md:rounded-md bg-transparent md:hover:bg-[#2A55E5] md:hover:text-white md:duration-100"
+        >
+          <button class="text-lg flex items-center gap-2 p-1 flex-nowrap">
+            <span class="material-symbols-outlined"> account_circle </span
+            ><span class="hidden md:flex">Login</span
+            ><span class="material-symbols-outlined expend hidden md:flex">
+              expand_more
+            </span>
+          </button>
+        </div>
+
+        <div id="cart">
+          <button class="text-lg flex items-center gap-2 p-1 flex-nowrap">
+            <span class="material-symbols-outlined"> shopping_cart </span
+            ><span class="hidden lg:flex">Cart</span>
+          </button>
+        </div>
+
+        <div id="becomeASeller">
+          <button class="text-lg flex items-center gap-2 p-1 flex-nowrap">
+            <span class="material-symbols-outlined">
+              featured_seasonal_and_gifts </span
+            ><span class="hidden xl:flex">Become a Seller</span>
+          </button>
+        </div>
+
+        <div id="menu">
+          <button
+            class="text-lg hidden md:flex items-center gap-2 p-1 md:p-2 flex-nowrap hover:bg-[#F1F2F4] border-transparent border hover:border-gray-200 rounded-md"
+          >
+            <span class="material-symbols-outlined"> more_vert </span>
+          </button>
+          <button
+            class="text-lg hidden max-md:flex items-center gap-2 p-1 flex-nowrap"
+          >
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="itemsSection"
+        class="flex justify-between items-center py-4 bg-white md:my-2 md:mx-4 gap-10 lg:px-24 md:px-12 px-4 overflow-x-auto"
+      >
+        <div class="item flex flex-col items-center cursor-pointer">
+          <img src="../images/img1.webp" alt="" class="w-16" />
+          <p class="text-nowrap font-semibold">Grocery</p>
+        </div>
+        <div class="item flex flex-col items-center cursor-pointer">
+          <img src="../images/img2.webp" alt="" class="w-16" />
+          <p class="text-nowrap font-semibold">Mobiles</p>
+        </div>
+        <div class="item flex flex-col items-center cursor-pointer">
+          <img src="../images/img3.webp" alt="" class="w-16" />
+          <p class="text-nowrap font-semibold flex item-center">
+            Fashions<span
+              class="material-symbols-outlined itemExpend mt-1 hidden xl:flex"
+            >
+              expand_more
+            </span>
+          </p>
+        </div>
+        <div class="item flex flex-col items-center cursor-pointer">
+          <img src="../images/img4.webp" alt="" class="w-16" />
+          <p class="text-nowrap font-semibold flex item-center">
+            Electronics<span
+              class="material-symbols-outlined itemExpend mt-1 hidden xl:flex"
+            >
+              expand_more
+            </span>
+          </p>
+        </div>
+        <div class="item flex flex-col items-center cursor-pointer">
+          <img src="../images/img5.webp" alt="" class="w-16" />
+          <p class="text-nowrap font-semibold flex item-center">
+            Home & Furniture<span
+              class="material-symbols-outlined itemExpend mt-1 hidden xl:flex"
+            >
+              expand_more
+            </span>
+          </p>
+        </div>
+        <div class="item flex flex-col items-center cursor-pointer">
+          <img src="../images/img6.webp" alt="" class="w-16" />
+          <p class="text-nowrap font-semibold">Appliances</p>
+        </div>
+        <div class="item hidden md:flex flex-col items-center cursor-pointer">
+          <img src="../images/img7.webp" alt="" class="w-16" />
+          <p class="text-nowrap font-semibold">Travel</p>
+        </div>
+        <div class="item flex flex-col items-center cursor-pointer">
+          <img src="../images/img8.webp" alt="" class="w-16" />
+          <p class="text-nowrap font-semibold flex item-center">
+            Beauty, Toys & More<span
+              class="material-symbols-outlined itemExpend mt-1 hidden xl:flex"
+            >
+              expand_more
+            </span>
+          </p>
+        </div>
+        <div class="item flex flex-col items-center cursor-pointer">
+          <img src="../images/img9.webp" alt="" class="w-16" />
+          <p class="text-nowrap font-semibold flex item-center">
+            Two Wheelers<span
+              class="material-symbols-outlined itemExpend mt-1 hidden xl:flex"
+            >
+              expand_more
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="md:my-4 md:mx-4">
+        <img src="../images/img10.jpg" alt="" class="cursor-pointer" />
+      </div>
+
+      <div class="md:m-4 gap-3 h-72 flex items-center overflow-hidden">
+        <div class="xl:w-[85%] w-[100%] h-72 bg-white px-2 py-4">
+          <div class="flex justify-between items-center pb-4">
+            <h2 class="font-bold md:text-xl text-sm">
+              Best Deals On Smart Phones
+            </h2>
+            <span
+              class="material-symbols-outlined bg-[#2A55E5] text-white cursor-pointer sm:px-2 sm:py-1 p-1 rounded-full sm:text-xl text-[15px]"
+            >
+              chevron_right
+            </span>
+          </div>
+
+          <div
+            class="flex justify-between items-center gap-4 flex-nowrap overflow-x-auto"
+          >
+            <div
+              class="flex flex-col justify-center items-center border flex-nowrap px-10 py-4 cursor-pointer"
+            >
+              <img src="../images/img12.jpeg" alt="" class="w-[70%] pb-4" />
+              <p class="text-sm text-nowrap">iPhone 15</p>
+              <p class="text-md font-semibold pt-1 text-nowrap">
+                Incl of offers
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border flex-nowrap px-10 py-4 cursor-pointer"
+            >
+              <img src="../images/img13.jpeg" alt="" class="w-[70%] pb-4" />
+              <p class="text-sm text-nowrap">C 53</p>
+              <p class="text-md font-semibold pt-1 text-nowrap">
+                Incl of offers
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border flex-nowrap px-10 py-4 cursor-pointer"
+            >
+              <img src="../images/img14.jpeg" alt="" class="w-[70%] pb-4" />
+              <p class="text-sm text-nowrap">M6 Pro</p>
+              <p class="text-md font-semibold pt-1 text-nowrap">
+                Incl of offers
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border flex-nowrap px-10 py-4 cursor-pointer"
+            >
+              <img src="../images/img15.jpeg" alt="" class="w-[70%] pb-4" />
+              <p class="text-sm text-nowrap">iPhone 14</p>
+              <p class="text-md font-semibold pt-1 text-nowrap">
+                Incl of offers
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border flex-nowrap px-10 py-4 cursor-pointer"
+            >
+              <img src="../images/img16.jpeg" alt="" class="w-[70%] pb-4" />
+              <p class="text-sm text-nowrap">S23 FE</p>
+              <p class="text-md font-semibold pt-1 text-nowrap">
+                Incl of offers
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border flex-nowrap px-10 py-4 cursor-pointer"
+            >
+              <img src="../images/img17.jpeg" alt="" class="w-[70%] pb-4" />
+              <p class="text-sm text-nowrap">Edge 40</p>
+              <p class="text-md font-semibold pt-1 text-nowrap">
+                Incl of offers
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[15%] bg-[brown] h-72 hidden xl:flex">
+          <img
+            src="../images/img11.jpg"
+            alt=""
+            class="w-[100%] h-[100%] object-fill bg-center cursor-pointer"
+          />
+        </div>
+      </div>
+
+      <div class="md:my-4 md:mx-4 my-2">
+        <div id="saleProducts" class="grid md:grid-cols-3 grid-cols-2 gap-2">
+          <img src="../images/img18.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img19.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img20.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img21.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img22.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img23.webp" alt="" class="cursor-pointer" />
+        </div>
+      </div>
+
+      <div class="md:my-4 md:mx-4 my-2 bg-white pt-5 px-2">
+        <h2 class="pb-5 md:text-2xl text-xl font-semibold">Featured Brands</h2>
+        <div id="saleProducts" class="grid md:grid-cols-4 grid-cols-2 gap-2">
+          <img src="../images/img24.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img25.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img26.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img27.webp" alt="" class="cursor-pointer" />
+        </div>
+
+        <div id="saleProducts" class="grid grid-cols-3 gap-2 pt-2">
+          <img src="../images/img28.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img29.webp" alt="" class="cursor-pointer" />
+          <img src="../images/img30.webp" alt="" class="cursor-pointer" />
+        </div>
+      </div>
+
+      <div class="flex justify-center xl:h-[95vh] md:m-4 my-2 gap-3 h-auto">
+        <div class="xl:w-[30%] w-[100vw] xl:h-[95vh] p-2 bg-white">
+          <div class="flex justify-between items-center lg:h-16 h-12">
+            <h2 class="font-bold md:text-xl text-sm">
+              Best Deals On Smart Phones
+            </h2>
+            <span
+              class="material-symbols-outlined bg-[#2A55E5] text-white cursor-pointer sm:px-2 sm:py-1 p-1 rounded-full sm:text-xl text-[15px]"
+            >
+              chevron_right
+            </span>
+          </div>
+          <div
+            class="grid xl:grid-cols-2 grid-cols-2 md:grid-cols-4 gap-2 place-items-center bg-white"
+          >
+            <div
+              class="w-[100%] lg:h-72 flex flex-col md:p-4 p-2 items-start border cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] h-52 pb-4 flex justify-center">
+                <img src="../images/img37.jpeg" alt="" class="h-[100%]" />
+              </div>
+              <div>
+                <p class="font-medium text-nowrap">Smart Watches</p>
+                <p class="text-green-600 font-semibold text-lg text-nowrap">
+                  Min. 70% Off
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-[100%] lg:h-72 flex flex-col md:p-4 p-2 items-start border cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] h-52 pb-4 flex justify-center">
+                <img src="../images/img39.jpeg" alt="" class="h-[100%]" />
+              </div>
+              <div>
+                <p class="font-medium text-nowrap">Men's Shoes</p>
+                <p class="text-green-600 font-semibold text-lg text-nowrap">
+                  Min. 60% Off
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-[100%] lg:h-72 flex flex-col md:p-4 p-2 items-start border cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] h-52 pb-4 flex justify-center">
+                <img src="../images/img40.jpeg" alt="" class="h-[100%]" />
+              </div>
+              <div>
+                <p class="font-medium text-nowrap">Men's Shirt</p>
+                <p class="text-green-600 font-semibold text-lg text-nowrap">
+                  Min. 50% Off
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-[100%] lg:h-72 flex flex-col md:p-4 p-2 items-start border cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] h-52 pb-4 flex justify-center">
+                <img src="../images/img41.jpeg" alt="" class="h-[100%]" />
+              </div>
+              <div>
+                <p class="font-medium text-nowrap">Men's Clothes</p>
+                <p class="text-green-600 font-semibold text-lg text-nowrap">
+                  Min. 70% Off
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black w-[70%] h-[95vh] hidden xl:flex">
+          <img src="../images/img42.jpg" alt="" class="h-[100%] object-cover" />
+        </div>
+      </div>
+
+      <div class="md:my-4 md:mx-4 my-2">
+        <div id="saleProducts" class="grid md:grid-cols-3 grid-cols-2 gap-2">
+          <img src="../images/img52.jpg" alt="" class="cursor-pointer" />
+          <img src="../images/img53.jpg" alt="" class="cursor-pointer" />
+          <img src="../images/img54.jpg" alt="" class="cursor-pointer" />
+          <img src="../images/img55.jpg" alt="" class="cursor-pointer" />
+          <img src="../images/img56.jpg" alt="" class="cursor-pointer" />
+          <img src="../images/img57.jpg" alt="" class="cursor-pointer" />
+        </div>
+      </div>
+
+      <div class="md:my-4 md:mx-4 my-2 bg-white pt-5 px-2">
+        <h2 class="pb-5 md:text-2xl text-xl font-semibold">Featured Brands</h2>
+        <div id="saleProducts" class="grid md:grid-cols-4 grid-cols-2 gap-2">
+          <img src="../images/img44.png" alt="" class="cursor-pointer" />
+          <img src="../images/img49.png" alt="" class="cursor-pointer" />
+          <img src="../images/img50.png" alt="" class="cursor-pointer" />
+          <img src="../images/img51.jpeg" alt="" class="cursor-pointer" />
+        </div>
+
+        <div id="saleProducts" class="grid grid-cols-3 gap-2 pt-2">
+          <img src="../images/img58.jpg" alt="" class="cursor-pointer" />
+          <img src="../images/img59.jpg" alt="" class="cursor-pointer" />
+          <img src="../images/img30.webp" alt="" class="cursor-pointer" />
+        </div>
+      </div>
+
+      <footer
+        class="text-gray-600 body-font border-t-2 border-gray-700 bg-[#212121]"
+      >
+        <div
+          class="container px-2 md:px-12 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
+        >
+          <div
+            class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left"
+          >
+            <a
+              class="flex title-font font-medium items-center md:justify-start justify-center md:ml ml-[-4rem]"
+            >
+              <img src="../images/logo.svg" alt="" />
+            </a>
+            <div class="mt-6 text-sm text-gray-300">
+              <a
+                href="https://github.com/Rohan04022003"
+                target="_blank"
+                class="px-3 py-2.5 bg-black rounded-lg"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/rohan-kumar-5521aa253 "
+                target="_blank"
+                class="px-3 py-2.5 bg-black rounded-lg"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://instagram.com/rohankumarmahto01?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
+                target="_blank"
+                class="px-3 py-2.5 bg-black rounded-lg"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100015224166657 "
+                target="_blank"
+                class="px-3 py-2.5 bg-black rounded-lg"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://twitter.com/Rohankumar0402 "
+                target="_blank"
+                class="px-3 py-2.5 bg-black rounded-lg"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="mailto:rohankumar993985@gmail.com"
+                class="px-3 py-2.5 bg-black rounded-lg"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center"
+          >
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="title-font font-medium text-gray-400 tracking-widest text-xl mb-3"
+              >
+                ABOUT
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Flipkart Stories</a
+                  >
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="title-font font-medium text-gray-400 tracking-widest text-xl mb-3"
+              >
+                GROUP COMPANIES
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Myntra</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Flipkart Wholesale</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Cleatrip</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Shopsy</a
+                  >
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="title-font font-medium text-gray-400 tracking-widest text-xl mb-3"
+              >
+                HELP
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Payments</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Shipping</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Cancellation & Returns</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >FAQ</a
+                  >
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="title-font font-medium text-gray-400 tracking-widest text-lg mb-3"
+              >
+                CONSUMER POLICY
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Terms Of Use</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Security</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Privacy</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-500 cursor-pointer"
+                    >Sitemap</a
+                  >
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t-2 border-gray-700 h-20 flex justify-center items-center md:px-12 px-2"
+        >
+          <p class="text-gray-400 md:text-lg text-sm">
+            &#169;2024 | Flipkart Clone by Rohan Kumar Mahto
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
